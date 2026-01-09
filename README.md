@@ -15,7 +15,8 @@ A production-ready Java web application for managing employee records with real 
 
 ⚡ Fast Updates - Async email (no delays)
 
-🛠️ Tech Stack
+=> 🛠️ Tech Stack
+
 ![Alt text](https://github.com/rishabhpandey1507/employee-dbms-project01/blob/147abfef2ae1a44d1e09bb68059a291b1b84291f/techStack.png)
 
 
@@ -37,9 +38,9 @@ Gmail App Password
 => Project Structure
 
  ![Alt text](https://github.com/rishabhpandey1507/employee-dbms-project01/blob/c1baec1e42f89fbce1459abddfaf3b516a7013e6/home%20page.png)
- ![Alt text]()
- ![Alt text]()
- ![Alt text]()
+ ![Alt text](https://github.com/rishabhpandey1507/employee-dbms-project01/blob/4f7d9425ad0d733135b6aa67eb9f1ea725e28de9/addEmployee.png)
+ ![Alt text](https://github.com/rishabhpandey1507/employee-dbms-project01/blob/4f7d9425ad0d733135b6aa67eb9f1ea725e28de9/emailNotification.png)
+ ![Alt text](https://github.com/rishabhpandey1507/employee-dbms-project01/blob/4f7d9425ad0d733135b6aa67eb9f1ea725e28de9/employees%20details%20pdf%20.png)
 =======
 # Employee_Database_Management_System
 >>>>>>> 80b6dd61661a7e385734188253c5a0b7e5dc79e4
