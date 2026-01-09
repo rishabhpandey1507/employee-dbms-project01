@@ -36,7 +36,7 @@ Test Features
 
  Project Structure
 
- ![Alt text]()
+ ![Alt text](https://github.com/rishabhpandey1507/employee-dbms-project01/blob/c1baec1e42f89fbce1459abddfaf3b516a7013e6/home%20page.png)
 =======
 # Employee_Database_Management_System
 >>>>>>> 80b6dd61661a7e385734188253c5a0b7e5dc79e4
