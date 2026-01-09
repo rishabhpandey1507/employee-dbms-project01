@@ -18,6 +18,25 @@ Key Features
 🛠️ Tech Stack
 ![Alt text](https://github.com/rishabhpandey1507/employee-dbms-project01/blob/147abfef2ae1a44d1e09bb68059a291b1b84291f/techStack.png)
 
+
+Prerequisites 
+
+Java 11+ JDK
+Maven 3.9+
+MySQL 8.0 (root/pandeyji)
+Tomcat 10
+Gmail App Password
+
+Test Features
+
+✅ Main Page: http://localhost:8080/employee-dbms-project01/
+✅ Excel: /export/excel
+✅ PDF: /export/pdf
+✅ Update employee → Check Gmail notifications!
+
+ Project Structure
+
+ ![Alt text]()
 =======
 # Employee_Database_Management_System
 >>>>>>> 80b6dd61661a7e385734188253c5a0b7e5dc79e4
