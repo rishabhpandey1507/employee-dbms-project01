@@ -16,7 +16,7 @@ Key Features
 ⚡ Fast Updates - Async email (no delays)
 
 🛠️ Tech Stack
-
+![Alt text](https://github.com/rishabhpandey1507/employee-dbms-project01/blob/147abfef2ae1a44d1e09bb68059a291b1b84291f/techStack.png)
 
 =======
 # Employee_Database_Management_System
