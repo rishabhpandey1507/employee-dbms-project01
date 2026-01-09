@@ -1,0 +1,365 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    color: #333;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Form Section */
+.form-section {
+    padding: 40px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.form-section h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+#employeeForm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.form-group input {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #c67700;
+    box-shadow: 0 0 0 3px rgba(198, 119, 0, 0.1);
+}
+
+.form-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    color: #333;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(198, 119, 0, 0.4);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* Table Section - CLEAN & PROFESSIONAL */
+.table-section {
+    padding: 40px;
+    background: #f8f9fa;
+}
+
+.table-section h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #c67700;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    min-width: 1000px;
+}
+
+thead {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+
+thead th {
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    border-bottom: 2px solid #c67700;
+    white-space: nowrap;
+}
+
+tbody tr {
+    border-bottom: 1px solid #e8e8e8;
+    transition: all 0.2s ease;
+}
+
+tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+tbody tr:hover {
+    background: linear-gradient(to right, #fff8e1 0%, #ffe0b2 50%, #fff8e1 100%);
+    transform: scale(1.002);
+    box-shadow: 0 2px 8px rgba(198, 119, 0, 0.1);
+}
+
+tbody td {
+    padding: 16px 15px;
+    color: #444;
+    font-size: 0.9em;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+tbody td:nth-child(1) {
+    font-weight: 700;
+    color: #c67700;
+    text-align: center;
+}
+
+tbody td:nth-child(2) {
+    font-weight: 600;
+    color: #333;
+}
+
+tbody td:nth-child(5) {
+    font-weight: 700;
+    color: #28a745;
+    font-family: 'Courier New', monospace;
+}
+
+tbody td:nth-child(6) {
+    font-size: 0.85em;
+    color: #0066cc;
+}
+
+tbody td:nth-child(7) {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+tbody td:last-child {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-edit {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+}
+
+.btn-edit:hover {
+    background: linear-gradient(135deg, #218838 0%, #1ba87e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.btn-delete {
+    background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%);
+    color: white;
+}
+
+.btn-delete:hover {
+    background: linear-gradient(135deg, #c82333 0%, #e8590c 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+/* Export Buttons - NEW FEATURE */
+.export-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-export {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+.btn-export:hover {
+    background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.4);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+footer strong {
+    font-weight: 700;
+}
+
+/* Loading & Empty States */
+.loading,
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.1em;
+}
+
+.empty-state {
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .form-section,
+    .table-section {
+        padding: 20px;
+    }
+
+    #employeeForm {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.85em;
+    }
+
+    thead th,
+    tbody td {
+        padding: 12px 10px;
+    }
+
+    tbody td:last-child {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .export-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-export {
+        width: 100%;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Database Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Employee Database Management System</h1>
+            <p>Manage your employees efficiently</p>
+        </header>
+
+        <!-- Add/Edit Employee Form -->
+        <section class="form-section">
+            <h2 id="formTitle">Add New Employee</h2>
+            <form id="employeeForm">
+                <input type="hidden" id="employeeId">
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="salary">Salary:</label>
+                    <input type="number" id="salary" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hireDate">Hire Date:</label>
+                    <input type="date" id="hireDate" required>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Add Employee</button>
+                    <button type="button" class="btn btn-secondary" id="cancelBtn" style="display:none;">Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Employee List with Export Buttons -->
+        <section class="table-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 style="margin-bottom: 0;">Employee List</h2>
+                <div class="export-buttons">
+                    <button onclick="exportToExcel()" class="btn btn-export">
+                        📊 Export to Excel
+                    </button>
+                    <button onclick="exportToPDF()" class="btn btn-export">
+                        📄 Export to PDF
+                    </button>
+                </div>
+            </div>
+            <div class="table-container">
+                <table id="employeeTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Position</th>
+                            <th>Salary</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Hire Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="employeeTableBody">
+                        <!-- Employee data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Developed by <strong>Rishabh Pandey & Tushar Nayal</strong></p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
